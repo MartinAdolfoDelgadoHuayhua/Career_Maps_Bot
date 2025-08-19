@@ -1,0 +1,8 @@
+flask
+openai
+azure-storage-blob
+python-docx
+numpy
+tiktoken
+gunicorn
+python-dotenv

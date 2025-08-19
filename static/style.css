@@ -1,0 +1,146 @@
+:root {
+    --color-primario: #2AD2C9;
+    --color-secundario: #D9D9D9;
+    --color-texto: #7A7A7A;
+    --color-fondo: #FAF7F3;
+    --color-acento: #E93CAC;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--color-fondo);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+}
+
+.chat-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+#chat-box {
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid var(--color-secundario);
+    padding: 10px;
+    background: #fafafa;
+    margin-bottom: 15px;
+}
+
+.message {
+    padding: 8px 12px;
+    margin: 6px 0;
+    border-radius: 15px;
+    max-width: 80%;
+}
+
+.message.user {
+    background-color: var(--color-primario);
+    color: white;
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.message.bot {
+    background-color: var(--color-secundario);
+    color: black;
+    align-self: flex-start;
+    margin-right: auto;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--color-primario);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1ca9a0;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: var(--color-fondo);
+}
+
+.logo {
+    height: 50px;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 80px auto;
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.08);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.login-logo {
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.login-form label {
+    font-weight: bold;
+    color: var(--color-texto);
+    text-align: left;
+}
+
+.login-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.login-form button {
+    background-color: var(--color-primario);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-form button:hover {
+    background-color: #1ca9a0;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
