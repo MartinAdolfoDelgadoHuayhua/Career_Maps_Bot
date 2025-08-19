@@ -1,0 +1,24 @@
+# ===========================
+# 🔑 Azure OpenAI
+# ===========================
+AZURE_OPENAI_ENDPOINT=https://TU-ENDPOINT.openai.azure.com/
+AZURE_OPENAI_KEY=TU_API_KEY
+AZURE_OPENAI_API_VERSION=2024-12-01-preview
+
+# Nombre de los deployments en Azure OpenAI
+AZURE_OPENAI_CHAT_DEPLOYMENT=chat-model
+AZURE_OPENAI_EMBEDDING_DEPLOYMENT=embedding-model
+
+# ===========================
+# 📦 Azure Storage (Blob)
+# ===========================
+AZURE_STORAGE_ACCOUNT=tu_storage_account
+AZURE_STORAGE_KEY=tu_storage_key
+AZURE_STORAGE_CONTAINER=tu_contenedor
+
+# ===========================
+# ⚙️ Configuración de Flask
+# ===========================
+FLASK_ENV=development
+SECRET_KEY=supersecreto123
+PORT=8000
