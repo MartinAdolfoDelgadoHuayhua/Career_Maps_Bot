@@ -27,3 +27,17 @@ Instala los paquetes requeridos ejecutando:
 
 ```bash
 pip install -r requirements.txt
+```
+
+Al final solo es necesario que puedas subir un zip con la estructura 
+
+````cs
+Career_Maps_Bot/
+│── app.py              # Código principal del bot
+│── templates/          # UI básica (HTML)
+│── static/             # Archivos estáticos (CSS, JS)
+│── requirements.txt    # Dependencias del proyecto
+│── .env.example        # Variables de entorno de ejemplo
+│── config.txt          # Configuración alternativa
+│── README.md           # Documentación del proyecto
+````
