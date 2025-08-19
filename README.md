@@ -29,6 +29,7 @@ Instala los paquetes requeridos ejecutando:
 pip install -r requirements.txt
 ```
 
+## 📂 Estructura esperada  de subida en Azure:  
 Al final solo es necesario que puedas subir un zip con la estructura 
 
 ````cs
