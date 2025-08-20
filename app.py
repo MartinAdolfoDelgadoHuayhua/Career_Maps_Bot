@@ -340,7 +340,7 @@ def build_context(passages, max_context_tokens=1500, min_score=MIN_SIMILARITY):
     print(f"[CONTEXT] Contexto construido con {len(used)} pasajes (tokens aprox: {total}).")
     return context, used
 
-def answer(question, sid, temperature=0.7, max_output_tokens=500):
+def answer(question, sid, temperature=0.3, max_output_tokens=500):
     print(f"[ASK] Pregunta recibida: {question}")
     passages = retrieve(question, k=8, sid=sid)
     print(f"[ASK] {len(passages)} pasajes recuperados, construyendo contexto...")
@@ -352,7 +352,7 @@ def answer(question, sid, temperature=0.7, max_output_tokens=500):
 
     system_msg = (
         "Imagina que eres un asistente humano que responde solo teniendo en cuenta el contexto proporcionado. "
-        "Si no hay información suficiente, menciona que no puedes encontrar alguna respuesta y que lo puedes revisar con el equipo de People Analytics Corporativo. "
+        "Si no hay información suficiente, menciona que no puedes encontrar alguna respuesta y que lo vas a revisar... "
         "Sé amigable, responde sin mensajes de odio o discriminación, sin mencionar que eres un modelo de IA, y sin hacer preguntas al usuario."
     )
     user_msg = f"Contexto:\n{context}\n\nPregunta: {question}\nResponde de forma breve y precisa en español."
